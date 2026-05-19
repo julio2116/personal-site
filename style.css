@@ -79,7 +79,7 @@ section{
 
 .blur.two{
   background:var(--red);
-  bottom:-200px;
+  bottom:-20px;
   left:-100px;
 }
 
@@ -667,7 +667,7 @@ header.scrolled{
   transition:.3s;
 }
 
-.faq-item.active{
+.faq-item.faq-open{
   border-color:rgba(255,120,0,0.35);
 }
 
@@ -686,7 +686,7 @@ header.scrolled{
   transition:.3s;
 }
 
-.faq-item.active .faq-icon{
+.faq-item.faq-open .faq-icon{
   transform:rotate(45deg);
 }
 
