@@ -5,9 +5,8 @@
   --muted:#a8a8a8;
   --line:rgba(255,255,255,0.08);
 
-  --orange:#ff6b00;
-  --orange2:#ff3c00;
-  --red:#ff2d55;
+  --manjericao: #5FA777;
+  --verde-folia: #3E8E41;
 }
 
 *{
@@ -33,9 +32,9 @@ body::before{
   position:fixed;
   inset:0;
   background:
-  radial-gradient(circle at 20% 20%, rgba(255,120,0,0.12), transparent 30%),
-  radial-gradient(circle at 80% 0%, rgba(255,0,90,0.15), transparent 25%),
-  radial-gradient(circle at 70% 70%, rgba(255,80,0,0.12), transparent 30%);
+  radial-gradient(circle at 20% 20%, #3e8e412e, transparent 30%),
+  radial-gradient(circle at 80% 0%, #5FA7772e, transparent 25%),
+  radial-gradient(circle at 70% 70%, #3E8E412e, transparent 30%);
   pointer-events:none;
   z-index:-10;
 }
@@ -78,7 +77,7 @@ section{
 }
 
 .blur.two{
-  background:var(--red);
+  background:var(--verde-folia);
   bottom:-20px;
   left:-100px;
 }
@@ -117,7 +116,7 @@ header.scrolled{
 }
 
 .logo span{
-  color:var(--orange);
+  color:var(--verde-folia);
 }
 
 .nav-links{
@@ -140,7 +139,7 @@ header.scrolled{
   left:0;
   width:0;
   height:2px;
-  background:linear-gradient(to right,var(--orange),var(--red));
+  background:linear-gradient(to right,var(--verde-folia),var(--manjericao));
   transition:.3s;
 }
 
@@ -162,9 +161,9 @@ header.scrolled{
 
 .btn-primary{
   color:white;
-  background:linear-gradient(135deg,var(--orange),var(--red));
+  background:linear-gradient(135deg,var(--manjericao),var(--verde-folia));
   box-shadow:
-  0 10px 30px rgba(255,90,0,0.25),
+  0 10px 30px #5fa7774d,
   inset 0 1px 0 rgba(255,255,255,0.25);
 }
 
@@ -223,8 +222,8 @@ header.scrolled{
   width:10px;
   height:10px;
   border-radius:50%;
-  background:var(--orange);
-  box-shadow:0 0 15px var(--orange);
+  background:var(--manjericao);
+  box-shadow:0 0 15px var(--manjericao);
 }
 
 .hero h1{
@@ -236,7 +235,7 @@ header.scrolled{
 }
 
 .gradient{
-  background:linear-gradient(to right,var(--orange),var(--red));
+  background:linear-gradient(to right,var(--manjericao),var(--verde-folia));
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
@@ -337,7 +336,7 @@ header.scrolled{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(135deg,rgba(255,120,0,0.08),transparent);
+  background:linear-gradient(135deg,rgba(255, 119, 0, 0),transparent);
   opacity:0;
   transition:.3s;
 }
@@ -348,7 +347,7 @@ header.scrolled{
 
 .stat-card:hover{
   transform:translateY(-10px);
-  border-color:rgba(255,120,0,0.3);
+  border-color:#5fa77757;
 }
 
 .stat-number{
@@ -372,7 +371,7 @@ header.scrolled{
 }
 
 .section-title span{
-  color:var(--orange);
+  color:var(--manjericao);
   font-weight:700;
   letter-spacing:2px;
   font-size:.9rem;
@@ -418,7 +417,7 @@ header.scrolled{
   inset:-1px;
   border-radius:36px;
   padding:1px;
-  background:linear-gradient(135deg,transparent,rgba(255,120,0,0.5),transparent);
+  background:linear-gradient(135deg,transparent,#5fa77781,transparent);
   -webkit-mask:
   linear-gradient(#fff 0 0) content-box,
   linear-gradient(#fff 0 0);
@@ -437,7 +436,7 @@ header.scrolled{
 }
 
 .plan-card.popular{
-  border:1px solid rgba(255,120,0,0.4);
+  border:1px solid #5fa77771;
   transform:scale(1.03);
 }
 
@@ -445,7 +444,7 @@ header.scrolled{
   position:absolute;
   top:25px;
   right:25px;
-  background:linear-gradient(135deg,var(--orange),var(--red));
+  background:linear-gradient(135deg,var(--manjericao),var(--verde-folia));
   padding:10px 16px;
   border-radius:999px;
   font-size:.75rem;
@@ -485,7 +484,7 @@ header.scrolled{
 
 .feature::before{
   content:"✓";
-  color:var(--orange);
+  color:var(--manjericao);
   font-weight:900;
 }
 
@@ -586,7 +585,7 @@ header.scrolled{
   width:58px;
   height:58px;
   border-radius:50%;
-  background:linear-gradient(135deg,var(--orange),var(--red));
+  background:linear-gradient(135deg,var(--manjericao),var(--verde-folia));
 }
 
 .user strong{
@@ -608,7 +607,7 @@ header.scrolled{
   border-radius:40px;
   padding:90px;
   background:
-  linear-gradient(135deg,rgba(255,90,0,0.9),rgba(255,45,85,0.9)),
+  linear-gradient(135deg,#5fa7778a,#3E8E41),
   url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1400&auto=format&fit=crop');
   background-size:cover;
   background-position:center;
@@ -668,7 +667,7 @@ header.scrolled{
 }
 
 .faq-item.faq-open{
-  border-color:rgba(255,120,0,0.35);
+  border-color:#3e8e4154;
 }
 
 .faq-question{
