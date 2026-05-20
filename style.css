@@ -107,10 +107,18 @@ header.scrolled{
   justify-content:space-between;
 }
 
+.logo-marca{
+  border-radius: 50%;
+  height: 50px;
+}
+
 .logo{
   font-size:1.5rem;
   font-weight:900;
   letter-spacing:2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo span{
@@ -197,7 +205,7 @@ header.scrolled{
 
 /* ALTERADO */
 .hero-content{
-  padding-top:90px;
+  padding-top:10px;
   max-width:600px;
   margin:0 auto;
 }
@@ -252,42 +260,51 @@ header.scrolled{
   flex-wrap:wrap;
 }
 
-.hero-image{
-  position:relative;
+.hero-image {
+  border-radius:40px;
 }
 
 .hero-image img{
-  border-radius:40px;
-  height:760px;
-  width:100%;
+  position: relative;
+  bottom: 74px;
   object-fit:cover;
+  overflow: hidden;
+  left: 29px;
   border:1px solid rgba(255,255,255,0.08);
   box-shadow:
   0 40px 80px rgba(0,0,0,0.6),
   0 0 0 1px rgba(255,255,255,0.04);
+  scale: 1.1;
+}
+
+.hero-container{
+  height:760px;
+  position:relative;
+  overflow: hidden;
+  border-radius:40px;
 }
 
 .floating-card{
   position:absolute;
+  z-index: 5;
   background:rgba(15,15,15,0.8);
   backdrop-filter:blur(20px);
   border:1px solid rgba(255,255,255,0.08);
   border-radius:24px;
   padding:22px;
-  width:220px;
+  max-width:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow:0 20px 40px rgba(0,0,0,0.4);
   animation:float 4s ease-in-out infinite;
 }
 
-.floating-card h3{
-  font-size:2rem;
-  margin-bottom:5px;
-}
-
 .floating-card p{
   color:#bcbcbc;
-  font-size:.9rem;
+  font-size:1.2rem;
   line-height:1.5;
+  margin: 0;
 }
 
 .card-1{
