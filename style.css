@@ -59,7 +59,7 @@ button{
 }
 
 section{
-  padding:120px 0;
+  padding-bottom:120px;
   position:relative;
 }
 
@@ -484,9 +484,7 @@ header.scrolled{
 .plan-card{
   position:relative;
   overflow:hidden;
-
   border-radius:36px;
-
   background:linear-gradient(
     180deg,
     #141414,
@@ -494,10 +492,11 @@ header.scrolled{
   );
 
   border:1px solid rgba(255,255,255,0.08);
-
   padding:45px;
-
   transition:.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .plan-card::before{
